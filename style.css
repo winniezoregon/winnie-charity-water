@@ -20,13 +20,8 @@ body {
   background: #fff;
 }
 
-.logo {
-  font-size: 1.5em;
-}
-
 .logo img {
-  height: 150px;
-  vertical-align: middle;
+  height: 250px;
   transition: transform 0.2s;
 }
 
@@ -54,7 +49,8 @@ body {
 .donate-btn {
   background-color: #FFC907;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 0%;
+  border: 2px solid #1A1A1A;
   transition: background 0.2s, color 0.2s, transform 0.2s;
   cursor: pointer;
 }
@@ -82,6 +78,7 @@ body {
   max-width: 500px;
   padding: 50px 0 50px 50px;
   background: none;
+  position: relative;
 }
 
 .left-panel h1 {
@@ -118,6 +115,11 @@ body {
   text-decoration: none;
 }
 
+.wave-img {
+  height: auto;
+  width: 100%;
+}
+
 .right-panel {
   flex: 1 1 0;
   text-align: center;
@@ -128,7 +130,7 @@ body {
 
 .right-panel img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 0;
   transition: box-shadow 0.3s, transform 0.2s;
 }
@@ -136,59 +138,4 @@ body {
 .right-panel img:hover {
   box-shadow: 0 8px 32px rgba(26, 26, 26, 0.12);
   transform: scale(1.02);
-}
-
-
-@media (max-width: 1024px) {
-  .hero {
-    flex-direction: column;
-    padding: 30px 0;
-  }
-
-  .left-panel,
-  .right-panel {
-    max-width: 100%;
-    padding: 30px 10px;
-  }
-
-  .right-panel {
-    margin-top: 0;
-  }
-
-  .logo img {
-    height: 80px;
-  }
-}
-
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    padding: 10px 5px;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .logo img {
-    height: 60px;
-  }
-
-  .hero {
-    padding: 15px 2vw;
-  }
-
-  .left-panel,
-  .right-panel {
-    padding: 15px 2vw;
-  }
-
-  .left-panel h1 {
-    font-size: 1.2em;
-    padding: 8px 8px;
-  }
 }
