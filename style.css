@@ -25,8 +25,13 @@ body {
 }
 
 .logo img {
-  height: 110px;
+  height: 150px;
   vertical-align: middle;
+  transition: transform 0.2s;
+}
+
+.logo img:hover {
+  transform: scale(1.05) rotate(-2deg);
 }
 
 .nav-links {
@@ -38,13 +43,28 @@ body {
 .nav-links a {
   text-decoration: none;
   color: #1A1A1A;
-  font-weight: bold;
+  font-weight: normal;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #FFC907;
 }
 
 .donate-btn {
   background-color: #FFC907;
   padding: 10px 15px;
   border-radius: 5px;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.donate-btn:hover {
+  background: #FFD84D;
+  color: #1A1A1A;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(255, 201, 7, 0.15);
+  text-decoration: none;
 }
 
 /* Hero section */
@@ -66,10 +86,10 @@ body {
 
 .left-panel h1 {
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   font-weight: normal;
   background-color: #FFC907;
-  padding: 10px 15px;
+  padding: 70px 15px;
   border-radius: 0%;
   display: inline-block;
 }
@@ -85,7 +105,17 @@ body {
   border: 2px solid #1A1A1A;
   text-decoration: none;
   color: #1A1A1A;
-  font-weight: bold;
+  font-weight: normal;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.make-change-btn:hover {
+  background: #FFD84D;
+  color: #1A1A1A;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(255, 201, 7, 0.15);
+  text-decoration: none;
 }
 
 .right-panel {
@@ -93,12 +123,19 @@ body {
   text-align: center;
   padding: 50px 50px 50px 0;
   border-radius: 0;
+  margin-top: 0;
 }
 
 .right-panel img {
   max-width: 100%;
   height: auto;
   border-radius: 0;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.right-panel img:hover {
+  box-shadow: 0 8px 32px rgba(26, 26, 26, 0.12);
+  transform: scale(1.02);
 }
 
 
@@ -115,7 +152,7 @@ body {
   }
 
   .right-panel {
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .logo img {
