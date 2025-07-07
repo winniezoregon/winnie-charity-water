@@ -1,0 +1,97 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background: white;
+  color: #000;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #fff;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.donate-btn {
+  background-color: #fddb3a;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 40px;
+}
+
+.left-panel {
+  flex: 1;
+  max-width: 500px;
+  background-color: #fddb3a;
+  padding: 30px;
+}
+
+.left-panel h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.left-panel p {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.make-change-btn {
+  background-color: #fddb3a;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.right-panel {
+  flex: 1;
+  text-align: center;
+}
+
+.right-panel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer wave placeholder */
+.wave {
+  height: 100px;
+  background: linear-gradient(to right, #001f3f, #0074d9, #7fdbff);
+  clip-path: ellipse(75% 100% at 50% 100%);
+  margin-top: -50px;
+}
